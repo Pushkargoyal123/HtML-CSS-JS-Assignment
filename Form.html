@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <title>Assignment</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">Student Enrollment Form</div>
+    </header>
+    <div class="container-fluid row">
+        <section class="col-md-6">
+            <form>
+                <div>
+                    <label class="label">NAME</label>
+                    <span>
+                        <input required type="text" id="name" />
+                    </span>
+                </div>
+                <div>
+                    <label class="label">EMAIL</label>
+                    <span>
+                        <input required type="email" id="email"/>
+                    </span>
+                </div>
+                <div>
+                    <label class="label">WEBSITE</label>
+                    <span>
+                        <input required type="url" id="website" />
+                    </span>
+                </div>
+                <div>
+                    <label class="label">IMAGE LINK</label>
+                    <span>
+                        <input required type="url" id="image"/>
+                    </span>
+                </div>
+                <div>
+                    <label class="label">GENDER</label>
+                    <span>
+                        <input required type="radio" name="gender" id="male">
+                        <label for="male">Male</label>
+                        <br>
+                        <input required type="radio" name="gender" id="female">
+                        <label for="female">Female</label>
+                    </span>
+                </div>
+                <div>
+                    <label class="label">SKILLS</label>
+                    <span>
+                        <input type="checkbox" name="java" id="java" value="Java">
+                        <label for="java">Java</label>
+                        <input type="checkbox" name="html" id="html" value="HTML">
+                        <label for="html">HTML</label>
+                        <input type="checkbox" name="css" id="css" value="CSS">
+                        <label for="css">CSS</label>
+                    </span>
+                </div>
+                <div class="action">
+                    <input class="btn btn-primary" type="submit" value="Enroll Student">
+                    <input class="btn btn-danger" type="reset" value="Clear">
+                </div>
+            </form>
+        </section>
+        <section class="col-md-1 line-section">
+            <div class="line"></div>
+        </section>
+        <section class="col-md-5">
+            <h3>Enrolled Students</h3>
+            <table border="1px" >
+                <thead>
+                    <th>Description</th>
+                    <th>Image</th>
+                </thead>
+                <tbody>
+                    <!-- Content shpould be addedd through javascript -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">@copyright 2021-2022 by fresher training</div>
+    </footer>
+
+    <script src="./form.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    height: 10vh;
+    background-color: #64DDBB;
+}
+.header-content{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 13px 0;
+}
+.footer{
+    height: 5vh;
+    background-color: #64DDBB;
+}
+.footer-content{
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.container-fluid{
+    min-height: 85vh;
+    width: 100%;
+    margin: 0 !important;
+}
+form div{
+    padding: 5px;
+    width: 100%;
+}
+.label{
+    width: 45%;
+}
+form div span{
+    display: inline-block;
+    width: 45%;
+    text-align: left;
+}
+form{
+    animation: transitionIn 2s;
+    margin-top: 30px;
+    padding: 30px;
+}
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg) scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0) scale(1);
+    }
+}
+.action{
+    margin: 20px;
+}
+.action input{
+    margin: 0px 20px;
+}
+.line{
+    width: 5px;
+    height: 70vh;
+    background-color: #64DDBB;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+h3{
+    text-align: center;
+    margin: 20px !important;
+}
+table{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+th{
+    padding: 5px;
+    background-color: #BADA55;
+    color: white;
+}
+td{
+    border: 3px #BADA55 solid !important;
+    font-size: 13px;
+    overflow: hidden;
+}
+.image-td{
+    text-align: center;
+}
+
+@media screen and (max-width : 768px) {
+    .line-section{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 413px) {
+    .action{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width : 380px) {
+    form{
+        margin: 0;
+        padding: 0;
+    }
+    #name, #email, #website, #image{
+        width: 100%;
+    }
+}
